@@ -1,0 +1,195 @@
+
+body {
+  background-color: var(--thirdly-color);
+  min-height: 100vh;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, 300px);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.itemX {
+  /* background-color: rgba(122, 114, 114, 0.8); */
+  font-size: 30px;
+  border-radius: 15px;
+  height: auto;
+  min-height: 300px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+.textp1 {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.textp {
+  margin: 0 0 25px 0 ;
+}
+
+.item1Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 65%;
+}
+
+.Item1DivButton {
+  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+}
+
+.Item1Button {
+  /* background-color:#0f62f9 ; */
+  border: none;
+  width: 350px;
+  height: 65px;
+  border-radius: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color:var(--primaryNotChangin);
+}
+
+#buttonlink {
+  color: white;
+}
+
+.item1 {
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.ImageContainer1 {
+  width: 50%;
+  height: 90%;
+  margin: 0;
+}
+
+.image-First {
+  width: 100%;
+  height: 100%;
+  /* max-height: 500px;  */
+}
+
+.text1 {
+  color: var(--text-color-orange);
+}
+
+.text2 {
+  color: var(--text-color-red);
+}
+
+.textName {
+  font-size: 50px;
+  color: var(--text-ColorToWhite);
+}
+
+.textR {
+  opacity: 0.5;
+  color: var(--border-BlackToGray);
+}
+
+.text1X {
+  color: var(--text-color-orange);
+  margin: 10px 0px 0px 0px;
+}
+
+.text2X {
+  color: var(--text-color-red);
+  margin: 15px 0px;
+}
+
+.textNameX {
+  font-size: 50px;
+  margin: 0px;
+  
+}
+
+.textRX {
+  opacity: 0.5;
+  margin: 0px;
+  color: var(--border-BlackToGray);
+}
+
+.textpX {
+  margin: 15px 0px;
+  color: var(--text-ColorToWhite);
+}
+
+.EmptySales {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  flex: 1;
+}
+
+/* Apply colors to grid items */
+.grid-container .item1 {
+  background-color: var(--background-color-1); /* Color for the first item */
+}
+
+/* Apply different background colors to subsequent items using nth-child */
+.grid-container .itemX:nth-child(2) {
+  background-color: var(--background-color-2); /* Color for the second item */
+}
+
+.grid-container .itemX:nth-child(3) {
+  background-color: var(--background-color-3); /* Color for the third item */
+}
+
+.grid-container .itemX:nth-child(4) {
+  background-color: var(--background-color-2); /* Color for the fourth item */
+}
+
+.grid-container .itemX:nth-child(5) {
+  background-color: var(--background-color-4); /* Color for the fifth item */
+}
+
+.grid-container .itemX:nth-child(6) {
+  background-color: var(--background-color-5); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(7) {
+  background-color: var(--background-color-6); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(8) {
+  background-color: var(--background-color-7); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(9) {
+  background-color: var(--background-color-8); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(10) {
+  background-color: var(--background-color-9); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(11) {
+  background-color: var(--background-color-10); /* Color for the sixth item */
+}
+.grid-container .itemX:nth-child(12) {
+  background-color: var(--background-color-11); /* Color for the sixth item */
+}

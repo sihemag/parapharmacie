@@ -1,0 +1,65 @@
+.Margin-Left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between ;
+    height: 250px;
+    background-image: url("../Image/simpleBackgroundImage.jpg");
+    align-items: center;
+    padding-left: 6%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.imageSubNavBar{
+    height: 100%;
+}
+.table{
+    width: 80%;
+    margin:auto;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    color: var(--text-ColorToWhite);
+}
+th{
+    text-align: left;
+    padding-bottom: 10px;
+    padding: 15px;
+}
+td{
+    padding: 15px;
+    
+}
+tr{
+    border-bottom: 1pt  solid var(--border-BlackToGray);
+    
+}
+.Box-Command{
+    width: 80%;
+    box-shadow: 1px 1px;
+    border: 1px solid var(--border-BlackToGray);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.ContainerCommand{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Box-Detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: var(--text-ColorToWhite);
+}
+.TotalDiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 10%;
+    box-sizing: border-box;
+    color: var(--text-ColorToWhite);
+}

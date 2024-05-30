@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-details {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  .invoice-number{
+    margin-left: 10%;
+    font-weight: bold;
+  }
+ span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .customer-info {
+    margin-bottom: 20px;
+  }
+  
+  .customer-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .info-row {
+    margin-bottom: 5px;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+ 
+  .Client-info-row{
+    width: 20%;
+    border: 1px solid black;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100px;
+    margin-bottom: 5%;
+  }
+
+  .products-table {
+    margin-bottom: 20px;
+    margin-top: 2.5%;
+  }
+  
+  .products-table h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    text-align: left;
+    
+  }
+  .bodyTable > * {
+    border-right: 1px solid black;
+  }
+  
+  th {
+    border: 1px solid black;
+  }
+  tbody {
+    border: 1px solid black;
+  }
+  tfoot td {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .total-label {
+    text-align: right;
+    border: 1px solid black;
+    border-bottom: none;
+  }
+  .total-value {
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+  }
+  .total-labelTTC {
+    text-align: right;
+    border: 1px solid black;
+    border-top: none;
+  }
+  .total-valueTTC {
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
+  }
+  .actions button {
+    display: block;
+    margin: 0 auto;
+  }
+  #add-product-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  #save-invoice-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .Button_Modify{
+    border: 1px solid orange;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.Button_Suspend{
+    border: 1px solid red;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.Button_Modify:active {
+    transform: translateY(-5.4%);
+  }
+.Button_Suspend:active {
+    transform: translateY(-5.4%);
+  }
+.action{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+.center-text{
+  text-align: center;
+}

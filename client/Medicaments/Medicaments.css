@@ -1,0 +1,173 @@
+body{
+    background-color: var(--thirdly-color);
+    min-height: 100vh;
+}
+.Margin-Left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between ;
+    height: 250px;
+    background-image: url("../Image/simpleBackgroundImage.jpg");
+    align-items: center;
+    padding-left: 6%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.imageSubNavBar{
+    height: 100%;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    gap: 15px;
+}
+.Flex-Col{
+    display: flex;
+    flex-direction: column;
+}
+.Left-Container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.InputText{
+    width: 80%;
+    height: 55px;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid rgb(216, 215, 215);
+    color: var(--text-ColorToWhite);
+}
+
+.checkbox-container{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.WhitesPace{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-ColorToWhite);
+}
+
+.Right-Container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.RightBox{
+    width: 30% ;
+    background-color: var(--color-WhiteToBlack);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 25px;
+    height: 430px;
+    border-radius: 15px;
+}
+.inactive {
+    opacity: 0.5; /* Reduce opacity to make it visually less prominent */
+    pointer-events: none; /* Disable pointer events to make it non-interactive */
+}
+
+/* Style for active box */
+.active {
+    opacity: 1; /* Full opacity for active box */
+    pointer-events: auto; /* Enable pointer events for active box */
+}
+
+.ImageContainer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 65%;
+    width: 80%;
+}
+.Image-Box{
+    width: 100%; 
+    height: 100%;
+}
+.Button-panier{
+    width: 55px;
+    height: 60px;
+    background-color: #b5cefd;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 5px;
+}
+.Image-panier{
+    width: 70%;
+    height: 70%;
+}
+.space-panier{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subCategorie{
+    padding-top:15px ;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.subBox{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+#curencyPrice{
+    color: rgba(235, 46, 46, 0.932);
+}
+#price{
+    font-weight: 700;
+    color: var(--primaryNotChangin);
+}
+.ImageSvgCheck{
+    width: 20px;
+    height: 20px;
+}
+.categoryCheckbox {
+    display: none;
+    height: 16px;
+    width: 16px;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.categoryCheckbox::after {
+    background: url('../Image/arrow-to-down-right-svgrepo-com.svg') no-repeat;
+    z-index: 1;
+}
+.labelCategirie{
+    background: url('../Image/arrow-to-down-right-svgrepo-com.svg') no-repeat;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    vertical-align: middle; /* Aligns the image vertically */
+    cursor: pointer; /* Adds pointer cursor for better UX */
+    
+    
+}
+label{
+    color: var(--text-ColorToWhite);
+}
+.categoryCheckbox:checked + .labelCategirie{
+    background: url('../Image/arrow-to-top-right-svgrepo-com.svg') no-repeat;
+    color: green;
+}

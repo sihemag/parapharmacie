@@ -1,0 +1,4 @@
+<div class="subBox subcategory_<?php echo $categoryId; ?>">
+                                        <input type="checkbox" id="<?php echo $subcategorie['id_SubCategorie']; ?>" class="subcategoryCheckbox subcategory_<?php echo $categoryId; ?>">
+                                        <label for="<?php echo $subcategorie['id_SubCategorie']; ?>"><?php echo $subcategorie['Name_SubCategorie']; ?></label>
+                                    </div>

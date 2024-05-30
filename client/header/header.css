@@ -1,0 +1,347 @@
+/*########################## */
+:root {
+
+    --primaryNotChangin:#007bff;
+    --pramaruChanginToWhite:#007bff; /* White*/
+    --text-ColorToWhite: black; /* White*/
+    --thirdly-color :white;
+    --text-color-orange: orange;
+    --text-color-red: rgb(211, 70, 35);
+    --background-color-1: #b9dcf2;
+    --background-color-2: #fff2e1;
+    --background-color-3: #fde9e8;
+    --background-color-4: #e5f5eb;
+    --background-color-5: #e2f2ff;
+    --background-color-6: #39bcb1;
+    --background-color-7: #39bc6b;
+    --background-color-8: #435cd9;
+    --background-color-9: #7dd943;
+    --background-color-10: #bed73f;
+    --background-color-11: #d0a223;
+    --background-color-12: #2ca90d;
+    --text-color: red;
+    --secondary-color: #f8f9fa;/*--darkreader-bg--secondary-color: #1b1e1f; second Color */
+    --border-BlackToGray: black ; /* #736b5e*/
+    --color-WhiteToBlack: white ;/*rgb(30, 32, 33)*/
+    --color-WhiteSmokeToBlack:  WhiteSmoke; /*rgb(30, 32, 33)
+    /* background-color: #181a1b;  body color*/ 
+}
+/*########################## */
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+h1{
+    color: var(--text-ColorToWhite);
+}
+a {
+    text-decoration: none;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    
+}
+
+.BarName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Image-1 {
+    height: 30px;
+    width: 30px;
+}
+
+.Button {
+    border-right: 2px solid var(--primaryNotChangin); /* Only right side border */
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    background-color: var(--secondary-color);
+    color: var(--text-ColorToWhite);
+    font-size: large;
+    height: 60px;
+    padding: 0 15px;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.Button:hover {
+    color: var( --primaryNotChangin);
+}
+
+.ButtonLogOut {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin-top: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5%;
+    background-color: var(--secondary-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+#searchInputHeader {
+    display: none;
+}
+
+.field {
+    position: relative;
+}
+
+.field input {
+    display: block;
+    background: 0;
+    border: 0;
+    outline: none;
+    width: 80vw;
+    max-width: 400px;
+    font-size: 1.5em;
+    transition: padding 0.3s 0.2s ease;
+}
+
+.field input:focus {
+    padding-bottom: 5px;
+}
+
+.field input:focus + .line:after {
+    transform: scaleX(1);
+}
+
+.line {
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    background: #bdc3c7;
+}
+
+.line:after {
+    content: " ";
+    position: absolute;
+    float: right;
+    width: 100%;
+    height: 3px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+    background: #1abc9c;
+}
+
+#searchImage {
+    transform: translateX(200%);
+    cursor: pointer;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.right-box1 {
+    /* width: 20%; */
+}
+
+.right-box2 {
+    /* width: 20%; */
+    margin-right: 15px;
+    color: var(--text-ColorToWhite);
+}
+
+.right-box2 > * {
+    font-size: large;
+}
+
+.right-box3 {
+    width: 60%;
+    position: relative;
+}
+
+.right-box3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Adjust as needed */
+    width: 2px; /* Adjust as needed */
+    background-color: var(--primaryNotChangin); /* Adjust as needed */
+}
+
+.Image {
+    height: 30px;
+    width: 30px;
+}
+
+.Image-2 {
+    padding-right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.Image-4 {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    padding-left: 5px;
+}
+
+.Inventory {
+    background-color: var(--primaryNotChangin);
+    border-radius: 999px;
+    margin-right: 15px;
+    padding: 5px;
+    width: 20px;
+    color: var(--thirdly-color);
+    text-align: center;
+}
+
+.p {
+    margin: 0;
+    color: var(--text-ColorToWhite);
+}
+
+.active {
+    color: var(--primaryNotChangin);
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 20px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .fa-moon {color: #f1c40f;height: 14px;z-index: 1;}
+  
+  .fa-sun {color: #f39c12; height: 14px;z-index: 1;}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 1px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  .ball{
+    z-index: 2;
+  }
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(33px);
+  }
+
+
+
+  

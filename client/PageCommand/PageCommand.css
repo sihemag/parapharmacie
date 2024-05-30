@@ -1,0 +1,79 @@
+.Container-Command{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    max-height: 800px;
+    gap: 15px;
+}
+
+.Container-Command > *{
+    width: 50%;
+    height: 100%;
+}
+#Price{
+    color: var(--primaryNotChangin);
+    margin: 0;
+    font-size: 25px;
+}
+#Description{
+    font-size: 25px;
+    color: var(--text-ColorToWhite);
+}
+h2{
+    color: var(--text-ColorToWhite);
+}
+h3{
+    color: var(--text-ColorToWhite);
+}
+#actualDes{
+    color: var(--text-ColorToWhite);
+}
+#quantity{
+    color:var(--primaryNotChangin) ;
+    font-size: 25px;
+    font-weight:700;
+}
+.Image-Med{
+    width: 100%;
+    height: 600px;
+}
+.Container-Quantite{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box-Quantite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-Add{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Button-Container{
+    justify-content: center;
+    display: flex;
+    
+}
+.Button-panier{
+    width: 80%;
+    border: none;
+    color: var(--thirdly-color);
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--primaryNotChangin);
+    height: 60px;
+    cursor: pointer;
+}
+.Button-quan{
+    background-color: var(--color-WhiteToBlack);
+    width: 60px;
+    height: 30px;
+    color: var(--text-ColorToWhite);
+    border: 1px solid rgba(128, 128, 128, 0.712);
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+<div class="grid-container">
+        <div class="item1">
+            <div>
+                <div class="item1Text">
+                    <h2 class="textp1"><?php echo $firstProduct['Name_Med']?></h2>
+                   <!--  <h1 class="textp1"><?php echo $firstProduct['']?></h1>
+                    <h2 class="textp1"><?php echo $firstProduct['']?></h2> -->
+                    <h1 class="textp1"><?php echo $firstProduct['Price']?></h1>
+                </div>
+                <div class="Item1DivButton">
+                    <Button class="Item1Button">Achetez maintenant</Button>
+                </div>
+            </div>
+            <div>
+                <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($firstProduct['Image_Med']); ?>" />
+            </div>
+        </div>
+        <?php
+            foreach ($Products as $Product) {
+        ?>
+        <div class="itemX box small-box">
+        
+            <h4 class="textp"> <?php echo $Product['Name_Med'] ?> </h4>
+            <!-- <h3 class="textp"> <?php echo $Product[''] ?> </h3>
+            <h4 class="textp"> <?php echo $Product[''] ?> </h4> -->
+            <h3 class="textp"> <?php echo $Product['Price'] ?> </h3>
+        </div>
+        <?php }?>
+    </div>  

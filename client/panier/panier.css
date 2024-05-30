@@ -1,0 +1,198 @@
+.Margin-Left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between ;
+    height: 250px;
+    background-image: url("../Image/simpleBackgroundImage.jpg");
+    align-items: center;
+    padding-left: 6%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.imageSubNavBar{
+    height: 100%;
+}
+.TitlePage{
+    margin-left: 10%;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-self: center;
+    margin: auto;
+    height: max-content;
+    gap: 15px;
+}
+.Left-Container{
+    width: 70%;
+    color: var(--text-changingToWhite);
+}
+.Right-Container{
+    width: 30%;
+    background-color: var(--color-WhiteSmokeToBlack);
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 550px;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    border: 1px solid rgb(192, 187, 187);
+
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+th{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.Space{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.addLine{
+    position: relative;
+}
+.addLine::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    background-color: gray; /* Adjust as needed */
+}
+tr{
+    position: relative;
+    color: var(--text-ColorToWhite);
+    
+}
+p,h2,h3{
+    color: var(--text-ColorToWhite);
+}
+tr::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    background-color: rgb(214, 212, 212); /* Adjust as needed */
+}
+.ButtonPanier{
+    width: 88%;
+    height: 50px;
+    background-color: var(--primaryNotChangin);
+    color: var(--thirdly-color);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.QuantityTd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+.quantity-btn{
+    cursor: pointer;
+}
+.Image-Panier{
+    width: 60px;
+    height: 60px;
+}
+.Delete{
+    height: 30px;
+    width: 30px;
+}
+.ButtonDelete{
+    background-color: var(--color-WhiteToBlack);
+    border: none;
+    cursor: pointer;
+}
+.formValidate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.suggestedDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.link{
+    color: black;
+    border: 1px solid gray;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+}
+.SuggestedImage{
+    width: 100px;
+    height: 100%;
+}
+#PriceSuggested{
+    color: green;
+}
+.SaveButton{
+    display: none;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--primaryNotChangin);
+    color: var(--thirdly-color);
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#TotalEvery , #TotalLiv , #Total{
+    color: var(--primaryNotChangin);
+    font-weight: 700;
+    
+}
+.ConfirmeDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    width: 80%;
+}
+
+.BlurredBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Adjust blur amount as needed */
+}
+.SubConfirmeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ButtonContinue{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.ConfirmeImage{
+    width: 350px;
+    height: 350px;
+}
